@@ -1,0 +1,81 @@
+body{
+  background: rgb(9,212,255);
+background: linear-gradient(90deg, rgba(9,212,255,1) 4%, rgba(0,0,0,1) 98%);
+}
+
+.game {
+  width: 600px;
+  height: 600px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.game td {
+  background-color: black;
+}
+.block {
+  transition: all 1s;
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  transform: rotateY(0deg);
+  border: 1px solid black;
+}
+img {
+  max-width: 100%;
+  max-height: 80px;
+  border-radius: 15%;
+  margin: 0 auto;
+}
+.close {
+  display: none;
+  transition: all 1s;
+}
+.open {
+  transition: all 1s;
+  transform: rotateY(360deg);
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+
+button {
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+button:hover,
+button:focus {
+  background-color: #07c;
+}
+
+button:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+button:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
